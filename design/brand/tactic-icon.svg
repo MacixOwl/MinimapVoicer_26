@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <title>TACTIC · 战局助手</title>
+  <desc>开口雷达圆环、对话尾巴和向右上的战术箭头。</desc>
+  <rect id="background" width="512" height="512" fill="#171918"/>
+  <g id="mark" fill="#F4F4EE" stroke="#F4F4EE">
+    <path d="M368 256 A112 112 0 1 1 256 144" fill="none" stroke-width="34" stroke-linecap="round"/>
+    <path d="M174 331 L148 390 L224 365 Z" stroke="none"/>
+    <path d="M216 282 L292 206 H264 V172 H350 V258 H316 V230 L240 306 Z" stroke="none"/>
+  </g>
+</svg>

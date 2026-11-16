@@ -1,0 +1,59 @@
+# Third-party components
+
+This demo links eSpeak NG 1.52.0, licensed under GPL v3 or later. Its Chinese
+voice data and dictionaries are a reduced copy of the eSpeak NG 1.51 Ubuntu
+package; the 1.52 engine is tested against that data. The GPL text is included
+in `eSpeak-NG-GPL-3.0.txt`. Treat a distributed combined executable/HAP as
+subject to the applicable GPL terms; retain corresponding source and build
+instructions. The app's integration sources are provided under GPL-3.0-or-later.
+`tools/build_native.sh` obtains the unmodified 1.52.0 source archive from:
+
+    https://github.com/espeak-ng/espeak-ng/tree/1.52.0
+
+Other linked components come from the sibling SmartServe checkout and its
+submodules. Preserve their notices when redistributing: SmartServe (Apache
+2.0), llama.cpp/ggml (MIT), cpp-httplib (MIT), cppcodec (MIT), nlohmann-json
+(MIT), curl (curl license), OpenSSL (Apache 2.0). Exact sources are recorded
+by the SmartServe commit and submodule revisions in `BUILD_INFO.json` next
+to the packaged artifacts. The native build also uses the OpenHarmony NDK
+runtime libraries.
+
+Since v1.0.4 the HAP bundles the `vits-icefall-zh-aishell3` small Chinese
+neural TTS model, lexicon, tokens and four FSTs, and the official OHOS
+sherpa-onnx 1.12.39 C API / ONNX Runtime native libraries. The model card
+declares Apache-2.0; see `AISHELL3-VITS-NOTICE.txt`. The model was trained
+using k2-fsa/icefall and AISHELL-3. The Apache-2.0 text is included in
+`Sherpa-ONNX-Apache-2.0.txt`, which also covers sherpa-onnx (Copyright
+2022-2026, its contributors). The model and library release archives are
+pinned by byte size and SHA256 in `tools/build_phone_tts.py`.
+
+ONNX Runtime is copyright Microsoft Corporation, MIT; see
+`ONNX-Runtime-MIT.txt` and `ONNX-Runtime-ThirdPartyNotices.txt`. This build
+also packages the API9 SDK's ARM64 libc++ shared runtime and a compiler-rt
+emutls object with a renamed private entry and public forwarding wrapper.
+LLVM components use Apache-2.0 WITH LLVM-exception; see
+`LLVM-Apache-2.0-with-exception.txt` and `native/phone_tts/tls.cpp`.
+No Android or newer system libc is redistributed.
+
+The built-in `demo_voice.wav` is now generated using the same small
+AISHELL3 VITS model through `native/phone_tts/speech.cpp` on Linux. It is
+a playback sample; actual arbitrary text uses the phone's neural TTS
+adapter. `artifacts/phone-tts-verification.json` records the latest
+generation and ASR diagnostics, not a human listening or phone test.
+
+The optional Linux backend still supports the separate MeloTTS
+Chinese/English model (MIT, Copyright (c) 2024 MyShell.ai).
+See `MeloTTS-MIT.txt` and `backend/neural_tts.py`. MeloTTS weights
+are not bundled into the HAP. Earlier `tts-verification*.json` files
+describe that historical/server path, not the current embedded sample.
+
+`native/capture_abi.h` contains a subset of the public OpenHarmony C interface
+declarations, Copyright (C) 2023-2024 Huawei Device Co., Ltd., Apache-2.0.
+The Apache-2.0 license text is also included in `SmartServe-Apache-2.0.txt`.
+Pinned source links are recorded in `tools/capture-api-evidence.json`;
+`native/capture_abi.h` contains the runtime-loading declarations.
+No system capture libraries are redistributed.
+
+The optional Qwen3.5-0.8B weights have their own model license and are not
+included in the HAP. `entry/src/main/resources/rawfile/models.json` pins the
+quantized files by repository revision, byte length and SHA256.

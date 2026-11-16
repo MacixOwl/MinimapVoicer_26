@@ -1,0 +1,22 @@
+Small Chinese neural TTS resources
+
+Model: vits-icefall-zh-aishell3
+Upstream model card:
+https://huggingface.co/csukuangfj/icefall-tts-aishell3-vits-low-2024-04-06
+Declared license: Apache-2.0
+Training implementation: https://github.com/k2-fsa/icefall
+Training data: AISHELL-3, https://www.openslr.org/93/
+
+Distribution archive:
+https://github.com/k2-fsa/sherpa-onnx/releases/download/tts-models/vits-icefall-zh-aishell3.tar.bz2
+Archive SHA256:
+ab468db3a3308cdd861495e0db2f25d79418a0c00639f74944c7cdf5dd8c6ec1
+
+The application retains model.onnx, tokens.txt, lexicon.txt, phone.fst,
+date.fst, number.fst and new_heteronym.fst unchanged. It omits the unused
+large rule.far and speaker listing. Per-file hashes are in the HAP's
+resources/rawfile/local-tts.json. No model retraining or weight changes.
+
+The Apache-2.0 license text is in Sherpa-ONNX-Apache-2.0.txt.
+This notice is supplied by the application integrator for attribution;
+it is not a verbatim copy of the upstream model card.

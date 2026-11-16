@@ -1,0 +1,107 @@
+{
+  "checked_at": "2026-11-11",
+  "scope": "Fixed official OpenHarmony C API declarations, not Huawei HarmonyOS 4.2 support certification",
+  "required_symbols": [
+    {
+      "symbol": "OH_AVScreenCapture_Create",
+      "since": 10,
+      "header": "capture.h",
+      "source": "https://github.com/openharmony/multimedia_player_framework/blob/OpenHarmony-5.0.0-Release/interfaces/kits/c/native_avscreen_capture.h"
+    },
+    {
+      "symbol": "OH_AVScreenCapture_Init",
+      "since": 10,
+      "header": "capture.h",
+      "source": "https://github.com/openharmony/multimedia_player_framework/blob/OpenHarmony-5.0.0-Release/interfaces/kits/c/native_avscreen_capture.h"
+    },
+    {
+      "symbol": "OH_AVScreenCapture_StartScreenCapture",
+      "since": 10,
+      "header": "capture.h",
+      "source": "https://github.com/openharmony/multimedia_player_framework/blob/OpenHarmony-5.0.0-Release/interfaces/kits/c/native_avscreen_capture.h"
+    },
+    {
+      "symbol": "OH_AVScreenCapture_StopScreenCapture",
+      "since": 10,
+      "header": "capture.h",
+      "source": "https://github.com/openharmony/multimedia_player_framework/blob/OpenHarmony-5.0.0-Release/interfaces/kits/c/native_avscreen_capture.h"
+    },
+    {
+      "symbol": "OH_AVScreenCapture_Release",
+      "since": 10,
+      "header": "capture.h",
+      "source": "https://github.com/openharmony/multimedia_player_framework/blob/OpenHarmony-5.0.0-Release/interfaces/kits/c/native_avscreen_capture.h"
+    },
+    {
+      "symbol": "OH_AVScreenCapture_SetMicrophoneEnabled",
+      "since": 10,
+      "header": "capture.h",
+      "source": "https://github.com/openharmony/multimedia_player_framework/blob/OpenHarmony-5.0.0-Release/interfaces/kits/c/native_avscreen_capture.h"
+    },
+    {
+      "symbol": "OH_AVScreenCapture_SetStateCallback",
+      "since": 12,
+      "header": "capture.h",
+      "source": "https://github.com/openharmony/multimedia_player_framework/blob/OpenHarmony-5.0.0-Release/interfaces/kits/c/native_avscreen_capture.h"
+    },
+    {
+      "symbol": "OH_AVScreenCapture_SetErrorCallback",
+      "since": 12,
+      "header": "capture.h",
+      "source": "https://github.com/openharmony/multimedia_player_framework/blob/OpenHarmony-5.0.0-Release/interfaces/kits/c/native_avscreen_capture.h"
+    },
+    {
+      "symbol": "OH_AVScreenCapture_SetDataCallback",
+      "since": 12,
+      "header": "capture.h",
+      "source": "https://github.com/openharmony/multimedia_player_framework/blob/OpenHarmony-5.0.0-Release/interfaces/kits/c/native_avscreen_capture.h"
+    },
+    {
+      "symbol": "OH_AVBuffer_GetNativeBuffer",
+      "since": 11,
+      "header": "avbuffer.h",
+      "source": "https://github.com/openharmony/interface_sdk_c/blob/OpenHarmony-5.0.0-Release/multimedia/media_foundation/native_avbuffer.h"
+    },
+    {
+      "symbol": "OH_NativeBuffer_GetConfig",
+      "since": 9,
+      "header": "buffer.h",
+      "source": "https://github.com/openharmony/interface_sdk_c/blob/OpenHarmony-5.0.0-Release/graphic/graphic_2d/native_buffer/native_buffer.h"
+    },
+    {
+      "symbol": "OH_NativeBuffer_Map",
+      "since": 9,
+      "header": "buffer.h",
+      "source": "https://github.com/openharmony/interface_sdk_c/blob/OpenHarmony-5.0.0-Release/graphic/graphic_2d/native_buffer/native_buffer.h"
+    },
+    {
+      "symbol": "OH_NativeBuffer_Unmap",
+      "since": 9,
+      "header": "buffer.h",
+      "source": "https://github.com/openharmony/interface_sdk_c/blob/OpenHarmony-5.0.0-Release/graphic/graphic_2d/native_buffer/native_buffer.h"
+    },
+    {
+      "symbol": "OH_NativeBuffer_Unreference",
+      "since": 9,
+      "header": "buffer.h",
+      "source": "https://github.com/openharmony/interface_sdk_c/blob/OpenHarmony-5.0.0-Release/graphic/graphic_2d/native_buffer/native_buffer.h"
+    }
+  ],
+  "headers": [
+    {
+      "filename": "avbuffer.h",
+      "sha256": "b810aa5194f124e72c0b48790797831741675c9f0ae86f92a448d14c46a21b72",
+      "source": "https://github.com/openharmony/interface_sdk_c/blob/OpenHarmony-5.0.0-Release/multimedia/media_foundation/native_avbuffer.h"
+    },
+    {
+      "filename": "buffer.h",
+      "sha256": "914e3f5a73673ff5fa7ec08b2b3702d0840d6679f01366de96958768d109047d",
+      "source": "https://github.com/openharmony/interface_sdk_c/blob/OpenHarmony-5.0.0-Release/graphic/graphic_2d/native_buffer/native_buffer.h"
+    },
+    {
+      "filename": "capture.h",
+      "sha256": "17c4df57a737e96147bd4d45ade221356458469a2c30c7cb17262cdc79ec5764",
+      "source": "https://github.com/openharmony/multimedia_player_framework/blob/OpenHarmony-5.0.0-Release/interfaces/kits/c/native_avscreen_capture.h"
+    }
+  ]
+}

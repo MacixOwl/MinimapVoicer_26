@@ -1,0 +1,23 @@
+The _26 cloud battlefield page uses matcha-icefall-zh-baker (3-step acoustic
+model) and the vocos-22khz-univ vocoder via sherpa-onnx 1.12.39.
+
+The official Matcha model README states:
+"This model is trained using the dataset from
+https://en.data-baker.com/datasets/freeDatasets/
+
+The dataset contains 10000 Chinese sentences of a native Chinese female speaker,
+which is about 12 hours.
+
+Note: The dataset is for non-commercial use only."
+
+Model source:
+https://github.com/k2-fsa/sherpa-onnx/releases/download/tts-models/matcha-icefall-zh-baker.tar.bz2
+Training code:
+https://github.com/k2-fsa/icefall/tree/master/egs/baker_zh/TTS
+Vocoder:
+https://github.com/k2-fsa/sherpa-onnx/releases/download/vocoder-models/vocos-22khz-univ.onnx
+https://github.com/charactr-platform/vocos
+
+The existing AISHELL3 notices describe the earlier model and sample audio.
+They do not grant a commercial-use license to the DataBaker model.
+This bundled voice is intended for this personal non-commercial demo.

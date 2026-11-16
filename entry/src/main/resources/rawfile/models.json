@@ -1,0 +1,31 @@
+{
+  "models": [
+    {
+      "id": "qwen3.5-0.8b-gguf",
+      "name": "Qwen3.5 0.8B Q4_K_M",
+      "description": "Small Chinese vision model for game voice demo",
+      "engine": "llamacpp",
+      "supports_vision": true,
+      "supports_function_calling": false,
+      "supports_reasoning": true,
+      "reasoning_generation_style": "qwen3_dot_x",
+      "image_min_tokens": 256,
+      "max_input_tokens": 2048,
+      "max_output_tokens": 96,
+      "base_url": "https://modelscope.cn/models/unsloth/Qwen3.5-0.8B-GGUF/resolve/88467eb7c8e3b6e7894c794f373050d4dbc6ae8a",
+      "model_path": "qwen3.5-0.8b-q4",
+      "files": [
+        {
+          "filename": "Qwen3.5-0.8B-Q4_K_M.gguf",
+          "size": 532517120,
+          "checksum": "bd258782e35f7f458f8aced1adc053e6e92e89bc735ba3be89d38a06121dc517"
+        },
+        {
+          "filename": "mmproj-F16.gguf",
+          "size": 204987232,
+          "checksum": "56e4c6cfe73b0c82e3e82bc518d7591997e61d81f723fc41a586f4fa69ea2453"
+        }
+      ]
+    }
+  ]
+}

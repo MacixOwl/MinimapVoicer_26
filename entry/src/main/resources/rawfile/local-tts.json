@@ -1,0 +1,56 @@
+{
+    "id":  "matcha-icefall-zh-baker",
+    "runtime":  "sherpa-onnx 1.12.39",
+    "speaker":  0,
+    "threads":  2,
+    "speed":  1.08,
+    "supported_speeds":  [
+                             1,
+                             1.08,
+                             1.18
+                         ],
+    "sample_rate":  22050,
+    "noise_scale":  1,
+    "silence_scale":  1,
+    "comma_pause_ms":  140,
+    "sentence_pause_ms":  220,
+    "model_license":  "DataBaker dataset: non-commercial use only; see licenses/Matcha-Baker-NOTICE.txt",
+    "files":  [
+                  {
+                      "filename":  "model.onnx",
+                      "size":  75624188,
+                      "sha256":  "47e82b11454edeeb65adc4e44a24fd54c6715cd4d875cc2a20f75545ecc32d4d"
+                  },
+                  {
+                      "filename":  "vocoder.onnx",
+                      "size":  53884024,
+                      "sha256":  "0574a135aa1db2de6e181050db2ec528496cacd4a4701fc5d7faf9f9804c0081"
+                  },
+                  {
+                      "filename":  "tokens.txt",
+                      "size":  19591,
+                      "sha256":  "56209b2bf609d5ac1d66ede6dae7bf5254bd3f8aa24c4a6823713d5b884d87ba"
+                  },
+                  {
+                      "filename":  "lexicon.txt",
+                      "size":  1363705,
+                      "sha256":  "38b886d46aefa50da6322a64d72fd595d5f4fae1051adb160d647541b1e0a4a2"
+                  },
+                  {
+                      "filename":  "phone.fst",
+                      "size":  88630,
+                      "sha256":  "1ac2b6fa56b1442320c4de7db08353bab8963a2b57f365eebcdd3a2d3562f8d7"
+                  },
+                  {
+                      "filename":  "date.fst",
+                      "size":  59154,
+                      "sha256":  "eb8aa079ae3cb81d8f4404992f39d61a0cb990947512b5b8d1e54d1f6980e718"
+                  },
+                  {
+                      "filename":  "number.fst",
+                      "size":  64482,
+                      "sha256":  "743f402181fcfebf76cc2f0546b71fa26476e626fbe4e460fb7b4c3a7a8bd5bd"
+                  }
+              ],
+    "total_bytes":  131103774
+}
